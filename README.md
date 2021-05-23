@@ -5,6 +5,8 @@
   - [最大公約数](https://github.com/1b0325h/ac-python/blob/main/math/gcd.py)
   - [最小公倍数](https://github.com/1b0325h/ac-python/blob/main/math/lcm.py)
   - [素数判定](https://github.com/1b0325h/ac-python/blob/main/math/is_prime.py)
+   - [6kyu - Is a number prime?](https://www.codewars.com/kata/5262119038c0985a5b00029f) [:heavy_check_mark:](https://github.com/1b0325h/ac-python/blob/main/problems/6kyu-is_a_number_prime.ipynb)
+   - [6kyu - Transform To Prime](https://www.codewars.com/kata/5a946d9fba1bb5135100007c) [:heavy_check_mark:](https://github.com/1b0325h/ac-python/blob/main/problems/6kyu-transform_to_prime.ipynb)
   - [素因数分解](https://github.com/1b0325h/ac-python/blob/main/math/prime_factors.py)
   - [10進数 → n進数](https://github.com/1b0325h/ac-python/blob/main/math/to_base_n.py)
   - [n進数 → 10進数](https://github.com/1b0325h/ac-python/blob/main/math/to_base_10.py)
