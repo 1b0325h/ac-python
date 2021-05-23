@@ -1,0 +1,210 @@
+{
+   // input
+   "input_01": {
+      "prefix": "input   ii",
+      "body": [
+         "${1:N} = int(input())"
+      ],
+      "description": "int(input())"
+   },
+
+   "input_02": {
+      "prefix": "input   mi",
+      "body": [
+         "${1:A, B} = map(int, input().split())"
+      ],
+      "description": "map(int, input().split())"
+   },
+
+   "input_03": {
+      "prefix": "input  lmi",
+      "body": [
+         "${1:X} = list(map(int, input().split()))"
+      ],
+      "description": "list(map(int, input().split()))"
+   },
+
+   "input_04": {
+      "prefix": "input  lci",
+      "body": [
+         "${1:X} = [int(input()) for _ in range(${2:N})]"
+      ],
+      "description": "[int(input()) for _ in range(${2:N})]"
+   },
+
+   "input_05": {
+      "prefix": "input  qwi",
+      "body": [
+         "${1:X} = [list(map(int, input().split())) for _ in range(${2:N})]"
+      ],
+      "description": "[list(map(int, input().split())) for _ in range(${2:N})]"
+   },
+
+   "input_06": {
+      "prefix": "input  qhi",
+      "body": [
+         "${1:XY} = [map(int, input().split()) for _ in range(${2:N})]",
+         "${3:X, Y} = [list(_) for _ in zip(*${1})]"
+      ],
+      "description": "[list(_) for _ in zip(*${1})]"
+   },
+
+   // snippet
+   "gcd.py": {
+      "prefix": "gcd",
+      "body": [
+         "def gcd(x, y):",
+         "   while y:",
+         "      x, y = y, x % y",
+         "   return x",
+         ""
+      ],
+      "description": "Greatest common divisor of two integers."
+   },
+
+   "lcm.py": {
+      "prefix": "lcm",
+      "body": [
+         "def lcm(x, y):",
+         "   def _gcd(x, y):",
+         "      while y:",
+         "         x, y = y, x % y",
+         "      return x",
+         "   return x * y // _gcd(x, y)",
+         ""
+      ],
+      "description": "Least common multiple of two integers."
+   },
+
+   "is_prime.py": {
+      "prefix": "is_prime",
+      "body": [
+         "def is_prime(n) -> bool:",
+         "   if n < 2:",
+         "      return False",
+         "   for i in range(2, int(n**0.5) + 1):",
+         "      if not n % i:",
+         "         return False",
+         "   return True",
+         ""
+      ],
+      "description": "Return True if n is prime and False otherwise."
+   },
+
+   "prime_factors.py": {
+      "prefix": "prime_factors",
+      "body": [
+         "def prime_factors(n: int) -> list:",
+         "   table, f = [], 3",
+         "   while not n % 2:",
+         "      n //= 2",
+         "      table.append(2)",
+         "   while f*f <= n:",
+         "      if not n % f:",
+         "         n //= f",
+         "         table.append(f)",
+         "      else:",
+         "         f += 2",
+         "   if n != 1:",
+         "      table.append(n)",
+         "   return table",
+         ""
+      ],
+      "description": "Prime factorization."
+   },
+
+   "to_base_10.py": {
+      "prefix": "to_base_10",
+      "body": [
+         "def to_base_10(n: str, base: int) -> int:",
+         "   x = list(n)",
+         "   c = 0",
+         "   while x:",
+         "      c *= base",
+         "      c += int(x.pop(0))",
+         "   return c",
+         ""
+      ],
+      "description": "Convert a number in any base to decimal."
+   },
+
+   "to_base_n.py": {
+      "prefix": "to_base_n",
+      "body": [
+         "def to_base_n(n: int, base: int) -> str:",
+         "   digit = 0",
+         "   for i in range(10**9):",
+         "      if n < base**i:",
+         "         digit += i",
+         "         break",
+         "   s = \"\"",
+         "   for i in range(1, digit+1):",
+         "      s += str(x := n // (base**(digit-i)))",
+         "      n -= x * (base**(digit-i))",
+         "   return s",
+         ""
+      ],
+      "description": "Convert a number in decimal to any base."
+   },
+
+   "ri.py": {
+      "prefix": "ri",
+      "body": [
+         "def ri(x, y) -> int:",
+         "   if x * y < 0:",
+         "      return int(x // y)",
+         "   else:",
+         "      return int((x + (-x % y)) / y)",
+         ""
+      ],
+      "description": "Round towards infinity the number x divided by y."
+   },
+
+   "meguru.py": {
+      "prefix": "meguru",
+      "body": [
+         "def meguru(ng, ok) -> int:",
+         "",
+         "   def _is_ok(mid) -> bool:",
+         "      return ${1:# set the formula that returns a bool}",
+         "",
+         "   while abs(ok - ng) > 1:",
+         "      mid = (ok + ng) // 2",
+         "      if _is_ok(mid):",
+         "         ok = mid",
+         "      else:",
+         "         ng = mid",
+         "   return ok",
+         ""
+      ],
+      "description": "Binary search for Meguru. Set range to ok and ng, and set is_ok to return a boolean."
+   },
+
+   "imos_1.py": {
+      "prefix": "imos_1",
+      "body": [
+         "def imos_1(start: list, end: list, add: list) -> list:",
+         "   table = [0] * (x := max(end)+2)",
+         "",
+         "   for i in range(len(start)):",
+         "      table[start[i]] += add[i]",
+         "      table[end[i]+1] -= add[i]",
+         "",
+         "   for i in range(1, x):",
+         "      table[i] += table[i-1]",
+         "",
+         "   return table",
+         ""
+      ],
+      "description": "Imos method in one dimension."
+   },
+
+   // other
+   "Infinity": {
+      "prefix": "float(\"inf\")",
+      "body": [
+         "INF = float(\"inf\")"
+      ],
+      "description": ""
+   },
+}
