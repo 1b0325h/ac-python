@@ -6,6 +6,7 @@
     - [ABC146C - Buy an Integer](https://atcoder.jp/contests/abc146/tasks/abc146_c) [:heavy_check_mark:](https://github.com/1b0325h/ac-python/blob/main/problems/abc146c-buy_an_integer.ipynb)
 - Math
   - [最大公約数](https://github.com/1b0325h/ac-python/blob/main/math/gcd.py)
+    - [ABC180C - Cream puff](https://atcoder.jp/contests/abc180/tasks/abc180_c) [:heavy_check_mark:](https://github.com/1b0325h/ac-python/blob/main/problems/abc180c-cream_puff.ipynb)
   - [最小公倍数](https://github.com/1b0325h/ac-python/blob/main/math/lcm.py)
   - [素数判定](https://github.com/1b0325h/ac-python/blob/main/math/is_prime.py)
     - [6kyu - Is a number prime?](https://www.codewars.com/kata/5262119038c0985a5b00029f) [:heavy_check_mark:](https://github.com/1b0325h/ac-python/blob/main/problems/6kyu-is_a_number_prime.ipynb)
