@@ -1,0 +1,10 @@
+- Algorithm
+  - [1次元いもす法](https://github.com/1b0325h/ac-python/blob/main/algorithm/imos_1.py)
+  - [二分探索](https://github.com/1b0325h/ac-python/blob/main/algorithm/meguru.py)
+- Math
+  - [最大公約数](https://github.com/1b0325h/ac-python/blob/main/math/gcd.py)
+  - [最小公倍数](https://github.com/1b0325h/ac-python/blob/main/math/lcm.py)
+  - [素数判定](https://github.com/1b0325h/ac-python/blob/main/math/is_prime.py)
+  - [素因数分解](https://github.com/1b0325h/ac-python/blob/main/math/prime_factors.py)
+  - [10進数 → n進数](https://github.com/1b0325h/ac-python/blob/main/math/to_base_n.py)
+  - [n進数 → 10進数](https://github.com/1b0325h/ac-python/blob/main/math/to_base_10.py)
