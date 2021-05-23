@@ -1,5 +1,6 @@
 - Algorithm
   - [1次元いもす法](https://github.com/1b0325h/ac-python/blob/main/algorithm/imos_1.py)
+    - [ABC127C - Prison](https://atcoder.jp/contests/abc127/tasks/abc127_c) [:heavy_check_mark:](https://github.com/1b0325h/ac-python/blob/main/problems/abc127c-prison.ipynb)
   - [二分探索](https://github.com/1b0325h/ac-python/blob/main/algorithm/meguru.py)
 - Math
   - [最大公約数](https://github.com/1b0325h/ac-python/blob/main/math/gcd.py)
@@ -11,3 +12,4 @@
   - [素因数分解](https://github.com/1b0325h/ac-python/blob/main/math/prime_factors.py)
   - [10進数 → n進数](https://github.com/1b0325h/ac-python/blob/main/math/to_base_n.py)
   - [n進数 → 10進数](https://github.com/1b0325h/ac-python/blob/main/math/to_base_10.py)
+    - [ABC192D - Base n](https://atcoder.jp/contests/abc192/tasks/abc192_d) [:heavy_check_mark:](https://github.com/1b0325h/ac-python/blob/main/problems/abc192d-base_n.ipynb)
