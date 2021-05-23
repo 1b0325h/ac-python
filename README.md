@@ -1,7 +1,9 @@
 - Algorithm
   - [1次元いもす法](https://github.com/1b0325h/ac-python/blob/main/algorithm/imos_1.py)
+    - [ABC183D - Water Heater](https://atcoder.jp/contests/abc183/tasks/abc183_d) [:heavy_check_mark:](https://github.com/1b0325h/ac-python/blob/main/problems/abc183d-water_heater.ipynb)
     - [ABC127C - Prison](https://atcoder.jp/contests/abc127/tasks/abc127_c) [:heavy_check_mark:](https://github.com/1b0325h/ac-python/blob/main/problems/abc127c-prison.ipynb)
   - [二分探索](https://github.com/1b0325h/ac-python/blob/main/algorithm/meguru.py)
+    - [ABC146C - Buy an Integer](https://atcoder.jp/contests/abc146/tasks/abc146_c) [:heavy_check_mark:](https://github.com/1b0325h/ac-python/blob/main/problems/abc146c-buy_an_integer.ipynb)
 - Math
   - [最大公約数](https://github.com/1b0325h/ac-python/blob/main/math/gcd.py)
   - [最小公倍数](https://github.com/1b0325h/ac-python/blob/main/math/lcm.py)
@@ -10,6 +12,7 @@
     - [ABC149C - Next Prime](https://atcoder.jp/contests/abc149/tasks/abc149_c) [:heavy_check_mark:](https://github.com/1b0325h/ac-python/blob/main/problems/abc149c-next_prime.ipynb)
     - [6kyu - Transform To Prime](https://www.codewars.com/kata/5a946d9fba1bb5135100007c) [:heavy_check_mark:](https://github.com/1b0325h/ac-python/blob/main/problems/6kyu-transform_to_prime.ipynb)
   - [素因数分解](https://github.com/1b0325h/ac-python/blob/main/math/prime_factors.py)
+    - [6kyu - Prime Factors](https://www.codewars.com/kata/542f3d5fd002f86efc00081a) [:heavy_check_mark:](https://github.com/1b0325h/ac-python/blob/main/problems/6kyu-prime_factors.ipynb)
   - [10進数 → n進数](https://github.com/1b0325h/ac-python/blob/main/math/to_base_n.py)
   - [n進数 → 10進数](https://github.com/1b0325h/ac-python/blob/main/math/to_base_10.py)
     - [ABC192D - Base n](https://atcoder.jp/contests/abc192/tasks/abc192_d) [:heavy_check_mark:](https://github.com/1b0325h/ac-python/blob/main/problems/abc192d-base_n.ipynb)
