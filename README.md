@@ -8,6 +8,7 @@
   - [最大公約数](https://github.com/1b0325h/ac-python/blob/main/math/gcd.py)
     - [ABC180C - Cream puff](https://atcoder.jp/contests/abc180/tasks/abc180_c) [:heavy_check_mark:](https://github.com/1b0325h/ac-python/blob/main/problems/abc180c-cream_puff.ipynb)
   - [最小公倍数](https://github.com/1b0325h/ac-python/blob/main/math/lcm.py)
+    - [ABC148C - Snack](https://atcoder.jp/contests/abc148/tasks/abc148_c) [:heavy_check_mark:](https://github.com/1b0325h/ac-python/blob/main/problems/abc148c-snack.ipynb)
   - [素数判定](https://github.com/1b0325h/ac-python/blob/main/math/is_prime.py)
     - [6kyu - Is a number prime?](https://www.codewars.com/kata/5262119038c0985a5b00029f) [:heavy_check_mark:](https://github.com/1b0325h/ac-python/blob/main/problems/6kyu-is_a_number_prime.ipynb)
     - [ABC149C - Next Prime](https://atcoder.jp/contests/abc149/tasks/abc149_c) [:heavy_check_mark:](https://github.com/1b0325h/ac-python/blob/main/problems/abc149c-next_prime.ipynb)
