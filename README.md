@@ -6,8 +6,10 @@
     - [ABC146C - Buy an Integer](https://atcoder.jp/contests/abc146/tasks/abc146_c) [:heavy_check_mark:](https://github.com/1b0325h/ac-python/blob/main/problems/abc146c-buy_an_integer.ipynb)
 - Math
   - [最大公約数](https://github.com/1b0325h/ac-python/blob/main/math/gcd.py)
+    - [7kyu - Greatest common divisor](https://www.codewars.com/kata/5500d54c2ebe0a8e8a0003fd) [:heavy_check_mark:](https://github.com/1b0325h/ac-python/blob/main/problems/7kyu-greatest_common_divisor.ipynb)
   - [最小公倍数](https://github.com/1b0325h/ac-python/blob/main/math/lcm.py)
     - [ABC148C - Snack](https://atcoder.jp/contests/abc148/tasks/abc148_c) [:heavy_check_mark:](https://github.com/1b0325h/ac-python/blob/main/problems/abc148c-snack.ipynb)
+    - [6kyu - Help Kiyo きよ solve her problems LCM Fun!](https://www.codewars.com/kata/5872bb7faa04282110000124) [:heavy_check_mark:](https://github.com/1b0325h/ac-python/blob/main/problems/6kyu-help_kiyo_solve_her_problems_lcm_fun.ipynb)
   - [約数列挙](https://github.com/1b0325h/ac-python/blob/main/math/divisors.py)
     - [ABC180C - Cream puff](https://atcoder.jp/contests/abc180/tasks/abc180_c) [:heavy_check_mark:](https://github.com/1b0325h/ac-python/blob/main/problems/abc180c-cream_puff.ipynb)
   - [素数判定](https://github.com/1b0325h/ac-python/blob/main/math/is_prime.py)
