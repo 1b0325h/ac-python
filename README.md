@@ -4,6 +4,7 @@
     - [ABC127C - Prison](https://atcoder.jp/contests/abc127/tasks/abc127_c) [:heavy_check_mark:](https://github.com/1b0325h/ac-python/blob/main/problems/abc127c-prison.ipynb)
   - [二分探索](https://github.com/1b0325h/ac-python/blob/main/algorithm/meguru.py)
     - [ABC146C - Buy an Integer](https://atcoder.jp/contests/abc146/tasks/abc146_c) [:heavy_check_mark:](https://github.com/1b0325h/ac-python/blob/main/problems/abc146c-buy_an_integer.ipynb)
+    - [ABC192D - Base n](https://atcoder.jp/contests/abc192/tasks/abc192_d) [:heavy_check_mark:](https://github.com/1b0325h/ac-python/blob/main/problems/abc192d-base_n.ipynb)
 - Math
   - [最大公約数](https://github.com/1b0325h/ac-python/blob/main/math/gcd.py)
     - [7kyu - Greatest common divisor](https://www.codewars.com/kata/5500d54c2ebe0a8e8a0003fd) [:heavy_check_mark:](https://github.com/1b0325h/ac-python/blob/main/problems/7kyu-greatest_common_divisor.ipynb)
