@@ -26,3 +26,5 @@
 - List
   - [平坦化](https://github.com/1b0325h/ac-python/blob/main/list/flatten.py)
     - [5kyu - flatten()](https://www.codewars.com/kata/513fa1d75e4297ba38000003) [:heavy_check_mark:](https://github.com/1b0325h/ac-python/blob/main/problems/5kyu-flatten.ipynb)
+  - [N分割](https://github.com/1b0325h/ac-python/blob/main/list/cascade.py)
+    - [8kyu - Enumerable Magic #20 - Cascading Subsets](https://www.codewars.com/kata/545af3d185166a3dec001190) [:heavy_check_mark:](https://github.com/1b0325h/ac-python/blob/main/problems/8kyu-cascading_subsets.ipynb)
