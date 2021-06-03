@@ -23,3 +23,6 @@
   - [10進数 → n進数](https://github.com/1b0325h/ac-python/blob/main/math/to_base_n.py)
   - [n進数 → 10進数](https://github.com/1b0325h/ac-python/blob/main/math/to_base_10.py)
     - [ABC192D - Base n](https://atcoder.jp/contests/abc192/tasks/abc192_d) [:heavy_check_mark:](https://github.com/1b0325h/ac-python/blob/main/problems/abc192d-base_n.ipynb)
+- List
+  - [平坦化](https://github.com/1b0325h/ac-python/blob/main/list/flatten.py)
+    - [5kyu - flatten()](https://www.codewars.com/kata/513fa1d75e4297ba38000003) [:heavy_check_mark:](https://github.com/1b0325h/ac-python/blob/main/problems/5kyu-flatten.ipynb)
