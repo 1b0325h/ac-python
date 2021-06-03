@@ -8,6 +8,7 @@
 - Math
   - [最大公約数](https://github.com/1b0325h/ac-python/blob/main/math/gcd.py)
     - [7kyu - Greatest common divisor](https://www.codewars.com/kata/5500d54c2ebe0a8e8a0003fd) [:heavy_check_mark:](https://github.com/1b0325h/ac-python/blob/main/problems/7kyu-greatest_common_divisor.ipynb)
+    - [ABC162C - Sum of gcd of Tuples(Easy)](https://atcoder.jp/contests/abc162/tasks/abc162_c) [:heavy_check_mark:](https://github.com/1b0325h/ac-python/blob/main/problems/abc162c-sum_of_gcd_of_tuples(easy).ipynb)
   - [最小公倍数](https://github.com/1b0325h/ac-python/blob/main/math/lcm.py)
     - [ABC148C - Snack](https://atcoder.jp/contests/abc148/tasks/abc148_c) [:heavy_check_mark:](https://github.com/1b0325h/ac-python/blob/main/problems/abc148c-snack.ipynb)
     - [5kyu - Least Common Multiple](https://www.codewars.com/kata/5259acb16021e9d8a60010af) [:heavy_check_mark:](https://github.com/1b0325h/ac-python/blob/main/problems/5kyu-least_common_multiple.ipynb)
