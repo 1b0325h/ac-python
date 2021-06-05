@@ -15,6 +15,7 @@
     - [6kyu - Help Kiyo きよ solve her problems LCM Fun!](https://www.codewars.com/kata/5872bb7faa04282110000124) [:heavy_check_mark:](https://github.com/1b0325h/ac-python/blob/main/problems/6kyu-help_kiyo_solve_her_problems_lcm_fun.ipynb)
   - [約数列挙](https://github.com/1b0325h/ac-python/blob/main/math/divisors.py)
     - [ABC180C - Cream puff](https://atcoder.jp/contests/abc180/tasks/abc180_c) [:heavy_check_mark:](https://github.com/1b0325h/ac-python/blob/main/problems/abc180c-cream_puff.ipynb)
+    - [7kyu - Count the divisors of a number](https://www.codewars.com/kata/542c0f198e077084c0000c2e) [:heavy_check_mark:](https://github.com/1b0325h/ac-python/blob/main/problems/7kyu-count_the_divisors_of_a_number.ipynb)
   - [素数判定](https://github.com/1b0325h/ac-python/blob/main/math/is_prime.py)
     - [6kyu - Is a number prime?](https://www.codewars.com/kata/5262119038c0985a5b00029f) [:heavy_check_mark:](https://github.com/1b0325h/ac-python/blob/main/problems/6kyu-is_a_number_prime.ipynb)
     - [ABC149C - Next Prime](https://atcoder.jp/contests/abc149/tasks/abc149_c) [:heavy_check_mark:](https://github.com/1b0325h/ac-python/blob/main/problems/abc149c-next_prime.ipynb)
