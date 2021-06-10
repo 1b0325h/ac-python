@@ -3,6 +3,7 @@
     - [ABC183D - Water Heater](https://atcoder.jp/contests/abc183/tasks/abc183_d) [:heavy_check_mark:](https://github.com/1b0325h/ac-python/blob/main/problems/abc183d-water_heater.ipynb)
     - [ABC127C - Prison](https://atcoder.jp/contests/abc127/tasks/abc127_c) [:heavy_check_mark:](https://github.com/1b0325h/ac-python/blob/main/problems/abc127c-prison.ipynb)
   - [二分探索](https://github.com/1b0325h/ac-python/blob/main/algorithm/meguru.py)
+    - [Difficulty: 3.1 - Guess the Number](https://open.kattis.com/problems/guess) [:heavy_check_mark:](https://github.com/1b0325h/ac-python/blob/main/problems/d3-guess_the_number.ipynb)
     - [ABC146C - Buy an Integer](https://atcoder.jp/contests/abc146/tasks/abc146_c) [:heavy_check_mark:](https://github.com/1b0325h/ac-python/blob/main/problems/abc146c-buy_an_integer.ipynb)
     - [ABC192D - Base n](https://atcoder.jp/contests/abc192/tasks/abc192_d) [:heavy_check_mark:](https://github.com/1b0325h/ac-python/blob/main/problems/abc192d-base_n.ipynb)
 - Math
@@ -15,6 +16,7 @@
     - [6kyu - Help Kiyo きよ solve her problems LCM Fun!](https://www.codewars.com/kata/5872bb7faa04282110000124) [:heavy_check_mark:](https://github.com/1b0325h/ac-python/blob/main/problems/6kyu-help_kiyo_solve_her_problems_lcm_fun.ipynb)
   - [約数列挙](https://github.com/1b0325h/ac-python/blob/main/math/divisors.py)
     - [ABC180C - Cream puff](https://atcoder.jp/contests/abc180/tasks/abc180_c) [:heavy_check_mark:](https://github.com/1b0325h/ac-python/blob/main/problems/abc180c-cream_puff.ipynb)
+    - [Difficulty: 3.2 - Candy Division](https://open.kattis.com/problems/candydivision) [:heavy_check_mark:](https://github.com/1b0325h/ac-python/blob/main/problems/d3-candy_division.ipynb)
     - [7kyu - Count the divisors of a number](https://www.codewars.com/kata/542c0f198e077084c0000c2e) [:heavy_check_mark:](https://github.com/1b0325h/ac-python/blob/main/problems/7kyu-count_the_divisors_of_a_number.ipynb)
     - [7kyu - Find the divisors!](https://www.codewars.com/kata/544aed4c4a30184e960010f4) [:heavy_check_mark:](https://github.com/1b0325h/ac-python/blob/main/problems/7kyu-find_the_divisors.ipynb)
   - [素数判定](https://github.com/1b0325h/ac-python/blob/main/math/is_prime.py)
@@ -22,6 +24,7 @@
     - [ABC149C - Next Prime](https://atcoder.jp/contests/abc149/tasks/abc149_c) [:heavy_check_mark:](https://github.com/1b0325h/ac-python/blob/main/problems/abc149c-next_prime.ipynb)
     - [6kyu - Transform To Prime](https://www.codewars.com/kata/5a946d9fba1bb5135100007c) [:heavy_check_mark:](https://github.com/1b0325h/ac-python/blob/main/problems/6kyu-transform_to_prime.ipynb)
     - [7kyu - Find the divisors!](https://www.codewars.com/kata/544aed4c4a30184e960010f4) [:heavy_check_mark:](https://github.com/1b0325h/ac-python/blob/main/problems/7kyu-find_the_divisors.ipynb)
+    - [Difficulty: 2.4 - Happy Happy Prime Prime](https://open.kattis.com/problems/happyprime) [:heavy_check_mark:](https://github.com/1b0325h/ac-python/blob/main/problems/d2-happy_happy_prime_prime.ipynb)
   - [素因数分解](https://github.com/1b0325h/ac-python/blob/main/math/prime_factors.py)
     - [6kyu - Prime Factors](https://www.codewars.com/kata/542f3d5fd002f86efc00081a) [:heavy_check_mark:](https://github.com/1b0325h/ac-python/blob/main/problems/6kyu-prime_factors.ipynb)
   - [10進数 → n進数](https://github.com/1b0325h/ac-python/blob/main/math/to_base_n.py)
