@@ -91,6 +91,31 @@
    },
 
    // math
+   "crt.py": {
+      "prefix": "crt",
+      "body": [
+         "def crt(rem: list, mod: list) -> tuple:",
+         "   def _egcd(a, b):",
+         "      if not a:",
+         "         return (b, 0, 1)",
+         "      else:",
+         "         d, y, x = _egcd(b % a, a)",
+         "         return (d, x - b//a * y, y)",
+         "",
+         "   r, m = 0, 1",
+         "   for i in range(len(rem)):",
+         "      x, y, _ = _egcd(m, mod[i])",
+         "      if (a := rem[i]-r) % x:",
+         "         return (0, -1)",
+         "      r += m * (a // x*y % (mod[i]//x))",
+         "      m *= mod[i]//x",
+         "",
+         "   return (r % m, m)",
+         ""
+      ],
+      "description": "Chinese remainder theorem"
+   },
+
    "gcd.py": {
       "prefix": "gcd",
       "body": [
@@ -222,7 +247,49 @@
       "description": "Round towards infinity the number x divided by y."
    },
 
+   // combinatorics
+   "combin.py": {
+      "prefix": "combin",
+      "body": [
+         "def combin(n: int, r: int, nCr={}) -> int:",
+         "   if not r or r == n:",
+         "      return 1",
+         "   if r == 1:",
+         "      return n",
+         "   if (n, r) in nCr:",
+         "      return nCr[(n, r)]",
+         "   nCr[(n, r)] = combin(n-1, r, nCr) + combin(n-1, r-1, nCr)",
+         "   return nCr[(n, r)]",
+         ""
+      ],
+      "description": "Find nCr of two integers."
+   },
+
    // list
+   "combinations.py": {
+      "prefix": "combinations",
+      "body": [
+         "def combinations(i: list, n: int):",
+         "   x = tuple(i)",
+         "   if n > len(x):",
+         "      return",
+         "   indices = list(range(n))",
+         "   yield list(x[_] for _ in indices)",
+         "   while True:",
+         "      for i in reversed(range(n)):",
+         "         if indices[i] != i + len(x) - n:",
+         "            break",
+         "      else:",
+         "         return",
+         "      indices[i] += 1",
+         "      for j in range(i+1, n):",
+         "         indices[j] = indices[j-1] + 1",
+         "      yield list(x[_] for _ in indices)",
+         ""
+      ],
+      "description": "[1, 2, 3], 2 -> [1, 2], [1, 3], [2, 3]"
+   },
+
    "flatten.py": {
       "prefix": "flatten",
       "body": [
