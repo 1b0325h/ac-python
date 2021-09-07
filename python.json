@@ -1,342 +1,551 @@
 {
-   // input
-   "input_01": {
-      "prefix": "input   ii",
-      "body": [
-         "${1:N} = int(input())"
-      ],
-      "description": "int(input())"
-   },
+    // input
+    "input_01": {
+        "prefix": "input  iii",
+        "body": [
+            "${1:N} = int(input())"
+        ],
+        "description": ""
+    },
 
-   "input_02": {
-      "prefix": "input   mi",
-      "body": [
-         "${1:A, B} = map(int, input().split())"
-      ],
-      "description": "map(int, input().split())"
-   },
+    "input_02": {
+        "prefix": "input  mii",
+        "body": [
+            "${1:A, B} = map(int, input().split())"
+        ],
+        "description": ""
+    },
 
-   "input_03": {
-      "prefix": "input  lmi",
-      "body": [
-         "${1:X} = list(map(int, input().split()))"
-      ],
-      "description": "list(map(int, input().split()))"
-   },
+    "input_03": {
+        "prefix": "input  lmi",
+        "body": [
+            "${1:X} = list(map(int, input().split()))"
+        ],
+        "description": ""
+    },
 
-   "input_04": {
-      "prefix": "input  lci",
-      "body": [
-         "${1:X} = [int(input()) for _ in range(${2:N})]"
-      ],
-      "description": "[int(input()) for _ in range(${2:N})]"
-   },
+    "input_04": {
+        "prefix": "input  lci",
+        "body": [
+            "${1:X} = [int(input()) for _ in range(${2:N})]"
+        ],
+        "description": ""
+    },
 
-   "input_05": {
-      "prefix": "input  qwi",
-      "body": [
-         "${1:X} = [list(map(int, input().split())) for _ in range(${2:N})]"
-      ],
-      "description": "[list(map(int, input().split())) for _ in range(${2:N})]"
-   },
+    "input_05": {
+        "prefix": "input  qwi",
+        "body": [
+            "${1:X} = [list(map(int, input().split())) for _ in range(${2:N})]"
+        ],
+        "description": ""
+    },
 
-   "input_06": {
-      "prefix": "input  qhi",
-      "body": [
-         "${1:XY} = [map(int, input().split()) for _ in range(${2:N})]",
-         "${3:X, Y} = [list(_) for _ in zip(*${1})]"
-      ],
-      "description": "[list(_) for _ in zip(*${1})]"
-   },
+    "input_06": {
+        "prefix": "input  qhi",
+        "body": [
+            "${1:XY} = [map(int, input().split()) for _ in range(${2:N})]",
+            "${3:X, Y} = [list(_) for _ in zip(*${1})]"
+        ],
+        "description": ""
+    },
 
-   // algorithm
-   "imos_1.py": {
-      "prefix": "imos_1",
-      "body": [
-         "def imos_1(start: list, end: list, add: list) -> list:",
-         "   table = [0] * (x := max(end)+2)",
-         "",
-         "   for i in range(len(start)):",
-         "      table[start[i]] += add[i]",
-         "      table[end[i]+1] -= add[i]",
-         "",
-         "   for i in range(1, x):",
-         "      table[i] += table[i-1]",
-         "",
-         "   return table",
-         ""
-      ],
-      "description": "Imos method in one dimension."
-   },
+    "input_07": {
+        "prefix": "input  fwi",
+        "body": [
+            "${1:X} = [x for _ in range(${2:N}) for x in map(int, input().split())]"
+        ],
+        "description": ""
+    },
 
-   "meguru.py": {
-      "prefix": "meguru",
-      "body": [
-         "def meguru(ng, ok) -> int:",
-         "",
-         "   def _is_ok(mid) -> bool:",
-         "      ${1:# set the formula that returns a bool}",
-         "      pass",
-         "",
-         "   while abs(ok - ng) > 1:",
-         "      mid = (ok + ng) // 2",
-         "      if _is_ok(mid):",
-         "         ok = mid",
-         "      else:",
-         "         ng = mid",
-         "   return ok",
-         ""
-      ],
-      "description": "Binary search for Meguru. Set range to ok and ng, and set is_ok to return a boolean."
-   },
+    "input_08": {
+        "prefix": "input  gni",
+        "body": [
+            "graph = [[] for _ in range(${1:N})]",
+            "for _ in range(${2:M}):",
+            "    u, v = map(int, input().split())",
+            "    graph[u-1].append(v-1)",
+            "    graph[v-1].append(u-1)"
+        ],
+        "description": ""
+    },
 
-   // math
-   "crt.py": {
-      "prefix": "crt",
-      "body": [
-         "def crt(rem: list, mod: list) -> tuple:",
-         "   def _egcd(a, b):",
-         "      if not a:",
-         "         return (b, 0, 1)",
-         "      else:",
-         "         d, y, x = _egcd(b % a, a)",
-         "         return (d, x - b//a * y, y)",
-         "",
-         "   r, m = 0, 1",
-         "   for i in range(len(rem)):",
-         "      x, y, _ = _egcd(m, mod[i])",
-         "      if (a := rem[i]-r) % x:",
-         "         return (0, -1)",
-         "      r += m * (a // x*y % (mod[i]//x))",
-         "      m *= mod[i]//x",
-         "",
-         "   return (r % m, m)",
-         ""
-      ],
-      "description": "Chinese remainder theorem"
-   },
+    "input_09": {
+        "prefix": "input  gyi",
+        "body": [
+            "graph = [[0]*${1} for _ in range(${1:N})]",
+            "for _ in range(${2:M}):",
+            "    u, v = map(int, input().split())",
+            "    graph[u-1][v-1] = 1",
+            "    graph[v-1][u-1] = 1"
+        ],
+        "description": ""
+    },
 
-   "gcd.py": {
-      "prefix": "gcd",
-      "body": [
-         "def gcd(x, y):",
-         "   if not y:",
-         "      return x",
-         "   while y:",
-         "      x, y = y, x % y",
-         "   return x",
-         ""
-      ],
-      "description": "Greatest common divisor of two integers."
-   },
+    // library
+    "imos1.py": {
+        "prefix": "imos1",
+        "body": [
+            "def imos1(start, end, add):",
+            "    table = [0] * (max(end)+2)",
+            "    for i in range(len(start)):",
+            "        table[start[i]] += add[i]",
+            "        table[end[i]] -= add[i]",
+            "    for i in range(1, max(end)+2):",
+            "        table[i] += table[i-1]",
+            "    return table",
+            ""
+        ],
+        "description": ""
+    },
 
-   "lcm.py": {
-      "prefix": "lcm",
-      "body": [
-         "def lcm(x, y):",
-         "   if not y:",
-         "      return 0",
-         "   def _gcd(x, y):",
-         "      while y:",
-         "         x, y = y, x % y",
-         "      return x",
-         "   return x * y // _gcd(x, y)",
-         ""
-      ],
-      "description": "Least common multiple of two integers."
-   },
+    "binary_search.py": {
+        "prefix": "binary_search",
+        "body": [
+            "def binary_search(ng, ok, f):",
+            "    while abs(ok-ng) > 1:",
+            "        mid = (ok+ng) // 2",
+            "        if f(mid):",
+            "            ok = mid",
+            "        else:",
+            "            ng = mid",
+            "    return ok",
+            ""
+        ],
+        "description": ""
+    },
 
-   "divisors.py": {
-      "prefix": "divisors",
-      "body": [
-         "def divisors(n) -> list:",
-         "   x = set()",
-         "   i = 1",
-         "   while i**2 <= n:",
-         "      if not n % i:",
-         "         x.add(i)",
-         "         x.add(n // i)",
-         "      i += 1",
-         "   return sorted(x)",
-         ""
-      ],
-      "description": "Enumerate integers to divisors."
-   },
+    "crt.py": {
+        "prefix": "crt",
+        "body": [
+            "def extgcd(a, b):",
+            "    if not a:",
+            "        return (b, 0, 1)",
+            "    d, y, x = extgcd(b%a, a)",
+            "    return (d, x-b//a*y, y)",
+            "",
+            "def crt(rem, mod):",
+            "    r, m = 0, 1",
+            "    for i in range(len(rem)):",
+            "        x, y, _ = extgcd(m, mod[i])",
+            "        if (a := rem[i]-r) % x:",
+            "            return (-1, 0)",
+            "        r += m * (a//x*y % (mod[i]//x))",
+            "        m *= mod[i]//x",
+            "    return (r%m, m)",
+            ""
+        ],
+        "description": ""
+    },
 
-   "is_prime.py": {
-      "prefix": "is_prime",
-      "body": [
-         "def is_prime(n) -> bool:",
-         "   if n < 2:",
-         "      return False",
-         "   for i in range(2, int(n**0.5) + 1):",
-         "      if not n % i:",
-         "         return False",
-         "   return True",
-         ""
-      ],
-      "description": "Return True if n is prime and False otherwise."
-   },
+    "gcd.py": {
+        "prefix": "gcd",
+        "body": [
+            "def gcd(x, y):",
+            "    while y:",
+            "        x, y = y, x % y",
+            "    return x",
+            ""
+        ],
+        "description": ""
+    },
 
-   "prime_factors.py": {
-      "prefix": "prime_factors",
-      "body": [
-         "def prime_factors(n: int) -> list:",
-         "   table, f = [], 3",
-         "   while not n % 2:",
-         "      n //= 2",
-         "      table.append(2)",
-         "   while f*f <= n:",
-         "      if not n % f:",
-         "         n //= f",
-         "         table.append(f)",
-         "      else:",
-         "         f += 2",
-         "   if n != 1:",
-         "      table.append(n)",
-         "   return table",
-         ""
-      ],
-      "description": "Prime factorization."
-   },
+    "lcm.py": {
+        "prefix": "lcm",
+        "body": [
+            "def gcd(x, y):",
+            "    while y:",
+            "        x, y = y, x % y",
+            "    return x",
+            "",
+            "def lcm(x, y):",
+            "    return x * y // gcd(x, y)",
+            ""
+        ],
+        "description": ""
+    },
 
-   "to_base_n.py": {
-      "prefix": "to_base_n",
-      "body": [
-         "def to_base_n(n: int, base: int) -> str:",
-         "   digit = 0",
-         "   for i in range(10**9):",
-         "      if n < base**i:",
-         "         digit += i",
-         "         break",
-         "   s = \"\"",
-         "   for i in range(1, digit+1):",
-         "      s += str(x := n // (base**(digit-i)))",
-         "      n -= x * (base**(digit-i))",
-         "   return s",
-         ""
-      ],
-      "description": "Convert a number in decimal to any base."
-   },
+    "divisors.py": {
+        "prefix": "divisors",
+        "body": [
+            "def divisors(n):",
+            "    x, i = set(), 1",
+            "    while i**2 <= n:",
+            "        if not n % i:",
+            "            x.add(i)",
+            "            x.add(n//i)",
+            "        i += 1",
+            "    return sorted(x)",
+            ""
+        ],
+        "description": ""
+    },
 
-   "to_base_10.py": {
-      "prefix": "to_base_10",
-      "body": [
-         "def to_base_10(n: str, base: int) -> int:",
-         "   x = list(n)",
-         "   c = 0",
-         "   while x:",
-         "      c *= base",
-         "      c += int(x.pop(0))",
-         "   return c",
-         ""
-      ],
-      "description": "Convert a number in any base to decimal."
-   },
+    "is_prime.py": {
+        "prefix": "is_prime",
+        "body": [
+            "def is_prime(n):",
+            "    if n < 2:",
+            "        return False",
+            "    for i in range(2, int(n**0.5)+1):",
+            "        if not n % i:",
+            "            return False",
+            "    return True",
+            ""
+        ],
+        "description": ""
+    },
 
-   "ri.py": {
-      "prefix": "ri",
-      "body": [
-         "def ri(x, y) -> int:",
-         "   if x * y < 0:",
-         "      return int(x // y)",
-         "   else:",
-         "      return int((x + (-x % y)) / y)",
-         ""
-      ],
-      "description": "Round towards infinity the number x divided by y."
-   },
+    "prime_factors.py": {
+        "prefix": "prime_factors",
+        "body": [
+            "def prime_factors(n):",
+            "    table, i = [], 2",
+            "    while i*i <= n:",
+            "        if n % i:",
+            "            i += 1",
+            "        else:",
+            "            n //= i",
+            "            table.append(i)",
+            "    if n > 1:",
+            "        table.append(n)",
+            "    return table",
+            ""
+        ],
+        "description": ""
+    },
 
-   // combinatorics
-   "combin.py": {
-      "prefix": "combin",
-      "body": [
-         "def combin(n: int, r: int, nCr={}) -> int:",
-         "   if not r or r == n:",
-         "      return 1",
-         "   if r == 1:",
-         "      return n",
-         "   if (n, r) in nCr:",
-         "      return nCr[(n, r)]",
-         "   nCr[(n, r)] = combin(n-1, r, nCr) + combin(n-1, r-1, nCr)",
-         "   return nCr[(n, r)]",
-         ""
-      ],
-      "description": "Find nCr of two integers."
-   },
+    "base_n.py": {
+        "prefix": "base_n",
+        "body": [
+            "def base_n(n, base):",
+            "    digit, s = 0, \"\"",
+            "    for i in range(10**9):",
+            "        if n < base**i:",
+            "            digit += i",
+            "            break",
+            "    for i in range(1, digit+1):",
+            "        s += str(x := n // (base**(digit-i)))",
+            "        n -= x * (base**(digit-i))",
+            "    return s",
+            ""
+        ],
+        "description": ""
+    },
 
-   // list
-   "combinations.py": {
-      "prefix": "combinations",
-      "body": [
-         "def combinations(i: list, n: int):",
-         "   x = tuple(i)",
-         "   if n > len(x):",
-         "      return",
-         "   indices = list(range(n))",
-         "   yield list(x[_] for _ in indices)",
-         "   while True:",
-         "      for i in reversed(range(n)):",
-         "         if indices[i] != i + len(x) - n:",
-         "            break",
-         "      else:",
-         "         return",
-         "      indices[i] += 1",
-         "      for j in range(i+1, n):",
-         "         indices[j] = indices[j-1] + 1",
-         "      yield list(x[_] for _ in indices)",
-         ""
-      ],
-      "description": "[1, 2, 3], 2 -> [1, 2], [1, 3], [2, 3]"
-   },
+    "base_10.py": {
+        "prefix": "base_10",
+        "body": [
+            "def base_10(n, base):",
+            "    x, c = list(n), 0",
+            "    while x:",
+            "        c *= base",
+            "        c += int(x.pop(0))",
+            "    return c",
+            ""
+        ],
+        "description": ""
+    },
 
-   "flatten.py": {
-      "prefix": "flatten",
-      "body": [
-         "def flatten(x: list):",
-         "   for i in x:",
-         "      if isinstance(i, list):",
-         "         yield from flatten(i)",
-         "      else:",
-         "         yield i",
-         ""
-      ],
-      "description": "([1,2],[3,4,5],[6,[7],[[8]]]) -> [1,2,3,4,5,6,7,8]"
-   },
+    "rperm.py": {
+        "prefix": "rperm",
+        "body": [
+            "def rperm(p):",
+            "    p = [0]+p",
+            "    q = [-1]*len(p)",
+            "    for i in range(1, len(p)):",
+            "        q[p[i]] = i",
+            "    return q[1:]",
+            ""
+        ],
+        "description": ""
+    },
 
-   "cascade.py": {
-      "prefix": "cascade",
-      "body": [
-         "def cascade(x:list, n:int):",
-         "   for i in range(len(x)-n+1):",
-         "      yield x[i:i+n]",
-         ""
-      ],
-      "description": "([1,2,3,4], 3) -> [[1,2,3],[2,3,4]]"
-   },
+    // import
+    "Counter": {
+        "prefix": "Counter",
+        "body": [
+            "from collections import Counter"
+        ],
+        "description": "collections"
+    },
 
-   // variable
-   "list_": {
-      "prefix": "list_",
-      "body": [
-         "list_ = []"
-      ],
-      "description": ""
-   },
+    "defaultdict": {
+        "prefix": "defaultdict",
+        "body": [
+            "from collections import defaultdict"
+        ],
+        "description": "collections"
+    },
 
-   "sum_": {
-      "prefix": "sum_",
-      "body": [
-         "sum_ = 0"
-      ],
-      "description": ""
-   },
+    "ChainMap": {
+        "prefix": "ChainMap",
+        "body": [
+            "from collections import ChainMap"
+        ],
+        "description": "collections"
+    },
 
-   "infinity": {
-      "prefix": "float(\"inf\")",
-      "body": [
-         "INF = float(\"inf\")"
-      ],
-      "description": ""
-   },
+    "deque": {
+        "prefix": "deque",
+        "body": [
+            "from collections import deque"
+        ],
+        "description": "collections"
+    },
+
+    "reduce": {
+        "prefix": "reduce",
+        "body": [
+            "from functools import reduce"
+        ],
+        "description": "functools"
+    },
+
+    "lru_cache": {
+        "prefix": "lru_cache",
+        "body": [
+            "from functools import lru_cache"
+        ],
+        "description": "functools"
+    },
+
+    "singledispatch": {
+        "prefix": "singledispatch",
+        "body": [
+            "from functools import singledispatch"
+        ],
+        "description": "functools"
+    },
+
+    "product": {
+        "prefix": "product",
+        "body": [
+            "from itertools import product"
+        ],
+        "description": "itertools"
+    },
+
+    "combinations": {
+        "prefix": "combinations",
+        "body": [
+            "from itertools import combinations"
+        ],
+        "description": "itertools"
+    },
+
+    "combinations_with_replacement": {
+        "prefix": "combinations_with_replacement",
+        "body": [
+            "from itertools import combinations_with_replacement"
+        ],
+        "description": "itertools"
+    },
+
+    "permutations": {
+        "prefix": "permutations",
+        "body": [
+            "from itertools import permutations"
+        ],
+        "description": "itertools"
+    },
+
+    "accumulate": {
+        "prefix": "accumulate",
+        "body": [
+            "from itertools import accumulate"
+        ],
+        "description": "itertools"
+    },
+
+    "chain": {
+        "prefix": "chain",
+        "body": [
+            "from itertools import chain"
+        ],
+        "description": "itertools"
+    },
+
+    "compress": {
+        "prefix": "compress",
+        "body": [
+            "from itertools import compress"
+        ],
+        "description": "itertools"
+    },
+
+    "groupby": {
+        "prefix": "groupby",
+        "body": [
+            "from itertools import groupby"
+        ],
+        "description": "itertools"
+    },
+
+    "itemgetter": {
+        "prefix": "itemgetter",
+        "body": [
+            "from operator import itemgetter"
+        ],
+        "description": "operator"
+    },
+
+    "mul": {
+        "prefix": "mul",
+        "body": [
+            "from operator import mul"
+        ],
+        "description": "operator"
+    },
+
+    "ceil": {
+        "prefix": "ceil",
+        "body": [
+            "from math import ceil"
+        ],
+        "description": "math"
+    },
+
+    "sqrt": {
+        "prefix": "sqrt",
+        "body": [
+            "from math import sqrt"
+        ],
+        "description": "math"
+    },
+
+    "cos": {
+        "prefix": "cos",
+        "body": [
+            "from math import cos"
+        ],
+        "description": "math"
+    },
+
+    "sin": {
+        "prefix": "sin",
+        "body": [
+            "from math import sin"
+        ],
+        "description": "math"
+    },
+
+    "pi": {
+        "prefix": "pi",
+        "body": [
+            "from math import pi"
+        ],
+        "description": "math"
+    },
+
+    "factorial": {
+        "prefix": "factorial",
+        "body": [
+            "from math import factorial"
+        ],
+        "description": "math"
+    },
+
+    "inf": {
+        "prefix": "inf",
+        "body": [
+            "from math import inf"
+        ],
+        "description": "math"
+    },
+
+    "match": {
+        "prefix": "match",
+        "body": [
+            "from re import match"
+        ],
+        "description": "re"
+    },
+
+    "fullmatch": {
+        "prefix": "fullmatch",
+        "body": [
+            "from re import fullmatch"
+        ],
+        "description": "re"
+    },
+
+    "search": {
+        "prefix": "search",
+        "body": [
+            "from re import search"
+        ],
+        "description": "re"
+    },
+
+    "findall": {
+        "prefix": "findall",
+        "body": [
+            "from re import findall"
+        ],
+        "description": "re"
+    },
+
+    "sub": {
+        "prefix": "sub",
+        "body": [
+            "from re import sub"
+        ],
+        "description": "re"
+    },
+
+    "split": {
+        "prefix": "split",
+        "body": [
+            "from re import split"
+        ],
+        "description": "re"
+    },
+
+    "ascii_letters": {
+        "prefix": "ascii_letters",
+        "body": [
+            "from string import ascii_letters"
+        ],
+        "description": "string"
+    },
+
+    "ascii_lowercase": {
+        "prefix": "ascii_lowercase",
+        "body": [
+            "from string import ascii_lowercase"
+        ],
+        "description": "string"
+    },
+
+    "ascii_uppercase": {
+        "prefix": "ascii_uppercase",
+        "body": [
+            "from string import ascii_uppercase"
+        ],
+        "description": "string"
+    },
+
+    "digits": {
+        "prefix": "digits",
+        "body": [
+            "from string import digits"
+        ],
+        "description": "string"
+    },
+
+    "comb": {
+        "prefix": "comb",
+        "body": [
+            "from scipy.special import comb"
+        ],
+        "description": "scipy.special"
+    },
+
+    "minkowski": {
+        "prefix": "minkowski",
+        "body": [
+            "from scipy.spatial.distance import minkowski"
+        ],
+        "description": "scipy.spatial.distance"
+    },
 }
