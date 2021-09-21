@@ -1,4 +1,4 @@
-# https://atcoder.jp/contests/past201912-open/submissions/25512196
+# https://atcoder.jp/contests/past201912-open/submissions/26024865
 
 # %%
 N = int(input())
@@ -8,9 +8,9 @@ ret = A[0]
 for i in A[1:]:
     if ret == i:
         print("stay")
-    elif ret > i:
+    if ret > i:
         print(f"down {ret-i}")
-    else:
+    if ret < i:
         print(f"up {i-ret}")
     ret = i
 # %%
