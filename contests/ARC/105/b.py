@@ -1,15 +1,15 @@
-# https://atcoder.jp/contests/arc105/submissions/25129691
+# https://atcoder.jp/contests/arc105/submissions/26024666
 
 # %%
 from functools import reduce
 
-def gcd(x, y):
+def igcd(x, y):
     while y:
-        x, y = y, x % y
+        x, y = y, x%y
     return x
 
 N = int(input())
 a = list(map(int, input().split()))
 
-print(reduce(gcd, a))
+print(reduce(igcd, a))
 # %%
