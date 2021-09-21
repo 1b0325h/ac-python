@@ -1,12 +1,12 @@
-def gcd(x, y):
+def igcd(x, y):
     """
-    >>> gcd(8, 9)
+    >>> igcd(8, 9)
     1
-    >>> gcd(30, 12)
+    >>> igcd(30, 12)
     6
     """
     while y:
-        x, y = y, x % y
+        x, y = y, x%y
     return x
 
 

@@ -1,24 +1,25 @@
-def prime_factors(n):
+def primefactors(n):
     """
-    >>> prime_factors(42)
+    >>> primefactors(42)
     [2, 3, 7]
-    >>> prime_factors(72)
+    >>> primefactors(72)
     [2, 2, 2, 3, 3]
-    >>> prime_factors(147)
+    >>> primefactors(147)
     [3, 7, 7]
-    >>> prime_factors(387)
+    >>> primefactors(387)
     [3, 3, 43]
     """
-    table, i = [], 2
+    n = abs(n)
+    x, i = [], 2
     while i*i <= n:
         if n % i:
             i += 1
         else:
             n //= i
-            table.append(i)
+            x.append(i)
     if n > 1:
-        table.append(n)
-    return table
+        x.append(n)
+    return sorted(x)
 
 
 

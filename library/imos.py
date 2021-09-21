@@ -1,16 +1,16 @@
-def imos1(start, end, add):
+def imos(start, end, add):
     """
     >>> N, W = 4, 10
     >>> S = [1, 2, 3, 2]
     >>> T = [3, 4, 10, 4]
     >>> P = [5, 4, 6, 1]
-    >>> max(imos1(S, T, P)) <= W
+    >>> max(imos(S, T, P)) <= W
     False
     >>> N, W = 4, 10
     >>> S = [1, 2, 3, 2]
     >>> T = [3, 4, 10, 3]
     >>> P = [5, 4, 6, 1]
-    >>> max(imos1(S, T, P)) <= W
+    >>> max(imos(S, T, P)) <= W
     True
     """
     table = [0] * (max(end)+2)

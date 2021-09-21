@@ -1,16 +1,16 @@
-def is_prime(n):
+def isprime(n):
     """
-    >>> is_prime(0)
+    >>> isprime(0)
     False
-    >>> is_prime(1)
+    >>> isprime(1)
     False
-    >>> is_prime(2)
+    >>> isprime(2)
     True
-    >>> is_prime(73)
+    >>> isprime(73)
     True
-    >>> is_prime(75)
+    >>> isprime(75)
     False
-    >>> is_prime(-1)
+    >>> isprime(-1)
     False
     """
     if n < 2:
