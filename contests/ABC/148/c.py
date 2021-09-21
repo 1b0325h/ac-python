@@ -1,15 +1,13 @@
-# https://atcoder.jp/contests/abc148/submissions/25163769
+# https://atcoder.jp/contests/abc148/submissions/26023651
 
 # %%
-def gcd(x, y):
+def ilcm(x, y):
+    u, v = x, y
     while y:
-        x, y = y, x % y
-    return x
-
-def lcm(x, y):
-    return x * y // gcd(x, y)
+        x, y = y, x%y
+    return u*v // x
 
 A, B = map(int, input().split())
 
-print(lcm(A, B))
+print(ilcm(A, B))
 # %%
