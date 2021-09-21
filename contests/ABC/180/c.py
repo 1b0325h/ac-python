@@ -1,7 +1,8 @@
-# https://atcoder.jp/contests/abc180/submissions/25166546
+# https://atcoder.jp/contests/abc180/submissions/26024009
 
 # %%
 def divisors(n):
+    n = abs(n)
     x, i = set(), 1
     while i**2 <= n:
         if not n % i:
