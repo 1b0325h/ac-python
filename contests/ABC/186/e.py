@@ -1,25 +1,24 @@
-# https://atcoder.jp/contests/abc186/submissions/25293182
+# https://atcoder.jp/contests/abc186/submissions/26024331
 
 # %%
-def extgcd(a, b):
-    if not a:
-        return (b, 0, 1)
-    d, y, x = extgcd(b%a, a)
-    return (d, x-b//a*y, y)
-
-def crt(rem, mod):
-    r, m = 0, 1
-    for i in range(len(rem)):
-        x, y, _ = extgcd(m, mod[i])
-        if (a := rem[i]-r) % x:
+def crt(m, v):
+    r, u = 0, 1
+    def _f(x, y):
+        if not x:
+            return (y, 0, 1)
+        u, v, w = _f(y%x, x)
+        return (u, w-y//x*v, v)
+    for i in range(len(v)):
+        x, y, _ = _f(u, m[i])
+        if (w := v[i]-r) % x:
             return (-1, 0)
-        r += m * (a//x*y % (mod[i]//x))
-        m *= mod[i]//x
-    return (r%m, m)
+        r += u*(w//x*y%(m[i]//x))
+        u *= m[i]//x
+    return (r%u, u)
 
 T = int(input())
 NSK = [map(int, input().split()) for _ in range(T)]
 
 for N, S, K in NSK:
-    print(crt([0, N-S], [K, N])[0] // K)
+    print(crt([K, N], [0, N-S])[0] // K)
 # %%
