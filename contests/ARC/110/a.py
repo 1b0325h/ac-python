@@ -1,17 +1,15 @@
-# https://atcoder.jp/contests/arc110/submissions/25129563
+# https://atcoder.jp/contests/arc110/submissions/26024772
 
 # %%
 from functools import reduce
 
-def gcd(x, y):
+def ilcm(x, y):
+    u, v = x, y
     while y:
-        x, y = y, x % y
-    return x
-
-def lcm(x, y):
-    return x * y // gcd(x, y)
+        x, y = y, x%y
+    return u*v // x
 
 N = int(input())
 
-print(reduce(lcm, range(2, N+1)) + 1)
+print(reduce(ilcm, range(2, N+1)) + 1)
 # %%
