@@ -26,6 +26,7 @@ A binary search is an algorithm to find a particular element in the list. Suppos
 
 - [ABC146C - Buy an Integer](https://atcoder.jp/contests/abc146/tasks/abc146_c) [:heavy_check_mark:](https://atcoder.jp/contests/abc146/submissions/26023532)
 - [ABC192D - Base n](https://atcoder.jp/contests/abc192/tasks/abc192_d) [:heavy_check_mark:](https://atcoder.jp/contests/abc192/submissions/26024471)
+- [ABC220C - Long Sequence](https://atcoder.jp/contests/abc220/tasks/abc220_c) [:heavy_check_mark:](https://atcoder.jp/contests/abc220/submissions/26182272)
 
 ## Math
 
@@ -148,6 +149,7 @@ Converts a string representation of a number in a given base into a decimal numb
 ```
 
 - [ABC192D - Base n](https://atcoder.jp/contests/abc192/tasks/abc192_d) [:heavy_check_mark:](https://atcoder.jp/contests/abc192/submissions/26024471)
+- [ABC220B - Base K](https://atcoder.jp/contests/abc220/tasks/abc220_b) [:heavy_check_mark:](https://atcoder.jp/contests/abc220/submissions/26180869)
 
 #### [base(n, b)](https://github.com/1b0325h/ac-python/blob/main/library/base.py)
 
