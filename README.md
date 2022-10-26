@@ -1,3 +1,5 @@
+<samp>
+
 # Python (3.8.2)
 
 ## Algorithm
@@ -163,3 +165,5 @@ Converts a number into a string representation with the given base (radix).
 ```
 
 - [ABC156B - Digits](https://atcoder.jp/contests/abc156/tasks/abc156_b) [:heavy_check_mark:](https://atcoder.jp/contests/abc156/submissions/26037581)
+
+</samp>
